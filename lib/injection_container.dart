@@ -14,7 +14,7 @@ Future<void> initializeDependencies() async {
   s1.registerSingleton<Dio>(Dio());
 
   // dependencies
-  //s1.registerSingleton<NewsApiService>(NewsApiService(s1()));
+  s1.registerSingleton<NewsApiService>(NewsApiService(s1()));
 
   s1.registerSingleton<ArticleRepository>(ArticleRepositoryImpl(s1(), s1()));
 

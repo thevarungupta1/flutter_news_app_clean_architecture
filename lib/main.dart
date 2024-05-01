@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_news_app/config/theme/app_theme.dart';
 import 'package:flutter_news_app/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
 import 'package:flutter_news_app/features/daily_news/presentation/bloc/article/remote/remote_article_event.dart';
+import 'package:flutter_news_app/features/daily_news/presentation/pages/home/daily_news.dart';
 import 'package:flutter_news_app/injection_container.dart';
-import 'config/theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       create: (context) => s1()..add(const GetArticles()),
       child: MaterialApp(
         theme: theme(),
-        home: const Text('Hello'),
+        home: Text('Hello..........................................'),
       ),
     );
   }
